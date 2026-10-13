@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" role="img" aria-label="Ilustração de fantasia corvo-geada">
+<defs><radialGradient id="bg"><stop stop-color="#514937"/><stop offset=".65" stop-color="#302d27"/><stop offset="1" stop-color="#25231f"/></radialGradient><radialGradient id="halo"><stop stop-color="#bea06c" stop-opacity=".26"/><stop offset="1" stop-color="#d5ae73" stop-opacity="0"/></radialGradient></defs>
+<rect width="640" height="430" fill="url(#bg)"/><circle cx="320" cy="217" r="208" fill="url(#halo)"/>
+<circle cx="320" cy="225" r="188" fill="none" stroke="#b99e6b" stroke-width="1.5" opacity=".65"/><circle cx="320" cy="225" r="175" fill="none" stroke="#bba477" stroke-width=".7" opacity=".5"/>
+<path d="M320 20v28 M320 399v18 M119 225H91 M548 225h-27 M180 85l19 19 M440 85l-19 19 M179 363l20-20 M460 363l-19-20" stroke="#d1b27a" opacity=".6"/>
+<g fill="#e2c98b" opacity=".8"><circle cx="133" cy="88" r="2"/><circle cx="501" cy="110" r="2"/><circle cx="475" cy="334" r="2"/><circle cx="181" cy="327" r="2"/><path d="M112 156v11m-6-6h12 M514 292v11m-6-6h12 M410 49v11m-6-6h12" stroke="#e4c885"/></g>
+<g>
+<path d="M317 164 Q272 122 223 153 Q178 190 209 236 Q240 261 292 251 L276 332 Q304 362 346 328 L341 251 Q390 266 423 231 Q454 183 413 150 Q359 121 327 163" fill="#536b76" stroke="#d7c493" stroke-width="5"/>
+<path d="M275 173 Q229 166 176 211 Q198 269 274 243 M364 176 Q425 173 471 215 Q449 269 367 241" fill="#3b4b56" stroke="#dfce9d" stroke-width="4"/>
+<path d="M294 176 Q289 117 319 103 Q349 119 344 178 L351 225 L286 225 Z" fill="#425862" stroke="#d9c39a" stroke-width="4"/>
+<path d="M312 144 L266 157 L311 166" fill="#c4a875" stroke="#e2c990" stroke-width="3"/>
+<circle cx="329" cy="139" r="5" fill="#e8d8a6"/>
+<path d="M289 250 L273 330 M348 252 L368 329 M273 330 L253 341 L272 339 L285 343 M368 329 L347 345 L368 340 L387 343" fill="none" stroke="#c3a77d" stroke-width="5" stroke-linecap="round"/>
+<path d="M307 265 L320 372 L336 263" fill="#2b414e" stroke="#d4c39e" stroke-width="3"/></g>
+<path d="M18 55V18H55 M585 18h37v37 M18 377v35h37 M585 412h37v-35" stroke="#c9ad72" opacity=".48" stroke-width="2" fill="none"/>
+<path d="M251 410H389" stroke="#d4b779" stroke-width=".8" opacity=".4"/></svg>

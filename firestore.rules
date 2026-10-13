@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth != null && request.auth.uid == 'COLOCA_AQUI_O_TEU_UID';
+    }
+
+    match /animals/{animalId} {
+      // O catálogo é público. Só o guardião pode adicionar, editar ou eliminar.
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    // Todas as restantes coleções estão fechadas.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

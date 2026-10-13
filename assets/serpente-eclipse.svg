@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" role="img" aria-label="Ilustração de fantasia serpente-eclipse">
+<defs><radialGradient id="bg"><stop stop-color="#514937"/><stop offset=".65" stop-color="#302d27"/><stop offset="1" stop-color="#25231f"/></radialGradient><radialGradient id="halo"><stop stop-color="#bea06c" stop-opacity=".26"/><stop offset="1" stop-color="#d5ae73" stop-opacity="0"/></radialGradient></defs>
+<rect width="640" height="430" fill="url(#bg)"/><circle cx="320" cy="217" r="208" fill="url(#halo)"/>
+<circle cx="320" cy="225" r="188" fill="none" stroke="#b99e6b" stroke-width="1.5" opacity=".65"/><circle cx="320" cy="225" r="175" fill="none" stroke="#bba477" stroke-width=".7" opacity=".5"/>
+<path d="M320 20v28 M320 399v18 M119 225H91 M548 225h-27 M180 85l19 19 M440 85l-19 19 M179 363l20-20 M460 363l-19-20" stroke="#d1b27a" opacity=".6"/>
+<g fill="#e2c98b" opacity=".8"><circle cx="133" cy="88" r="2"/><circle cx="501" cy="110" r="2"/><circle cx="475" cy="334" r="2"/><circle cx="181" cy="327" r="2"/><path d="M112 156v11m-6-6h12 M514 292v11m-6-6h12 M410 49v11m-6-6h12" stroke="#e4c885"/></g>
+<g>
+<path d="M177 295 Q171 237 223 231 Q271 220 291 262 Q307 305 357 298 Q399 288 392 255 Q383 211 348 217 Q329 221 320 239 Q297 280 253 258 Q215 240 226 196 Q241 136 316 132 Q389 128 430 188 Q466 236 451 296 Q433 364 329 355 Q244 346 201 374" stroke="#ccb67d" stroke-width="48" fill="none" stroke-linecap="round"/>
+<path d="M177 295 Q171 237 223 231 Q271 220 291 262 Q307 305 357 298 Q399 288 392 255 Q383 211 348 217 Q329 221 320 239 Q297 280 253 258 Q215 240 226 196 Q241 136 316 132 Q389 128 430 188 Q466 236 451 296 Q433 364 329 355 Q244 346 201 374" stroke="#384648" stroke-width="39" fill="none" stroke-linecap="round"/>
+<path d="M250 171 L276 158 M356 161 L379 181 M441 236 L446 260 M420 315 L396 337 M300 326 L277 310" stroke="#e2ce9d" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M160 287 Q138 281 116 300 L132 326 Q157 336 180 313 Z" fill="#465355" stroke="#d6b877" stroke-width="4"/>
+<circle cx="139" cy="300" r="5" fill="#eed08e"/><path d="M122 322 L101 328" stroke="#bbaa79" stroke-width="3"/></g>
+<path d="M18 55V18H55 M585 18h37v37 M18 377v35h37 M585 412h37v-35" stroke="#c9ad72" opacity=".48" stroke-width="2" fill="none"/>
+<path d="M251 410H389" stroke="#d4b779" stroke-width=".8" opacity=".4"/></svg>

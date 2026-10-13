@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 540">
+<defs><radialGradient id="a"><stop stop-color="#ad864c" stop-opacity=".20"/><stop offset="1" stop-color="#ad864c" stop-opacity="0"/></radialGradient></defs>
+<circle cx="290" cy="263" r="220" fill="url(#a)"/><circle cx="290" cy="264" r="199" fill="none" stroke="#b59961" stroke-opacity=".5" stroke-width="1"/>
+<circle cx="290" cy="264" r="183" fill="none" stroke="#b59961" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="290" cy="264" r="168" fill="none" stroke="#b59961" stroke-opacity=".17"/>
+<circle cx="303" cy="208" r="90" fill="none" stroke="#ba9d65" stroke-opacity=".5" stroke-width="2"/>
+<circle cx="330" cy="193" r="90" fill="#25231c"/><path d="M290 65v-25 M290 463v25 M490 264h25 M90 264H65" stroke="#bda26e" opacity=".5"/>
+<g stroke="#dec18a" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M195 425 Q199 361 241 324 L259 296 L320 293 L348 321 Q390 354 390 425" fill="#312e23" stroke-width="3"/>
+<path d="M257 316 Q244 281 256 245 Q267 214 291 212 Q320 215 328 248 Q343 279 320 313" fill="#322e23" stroke-width="3"/>
+<path d="M261 261 L231 265 L258 276 M325 258 L354 264 L327 275" stroke-width="3"/>
+<path d="M272 252 Q276 244 282 251 M303 250 Q311 242 315 251" stroke-width="4"/>
+<path d="M280 292 L290 298 L301 292" stroke-width="2"/>
+<path d="M272 222 Q236 160 203 139 Q167 113 160 62 M224 156 Q227 112 206 82 M202 139 Q171 157 136 143 M182 115 Q150 104 123 78 M183 112 Q194 79 186 49" stroke-width="7"/>
+<path d="M309 222 Q353 153 377 139 Q412 104 418 55 M363 153 Q360 113 384 76 M380 135 Q417 161 453 142 M402 108 Q432 104 464 70 M404 103 Q395 74 401 45" stroke-width="7"/>
+<path d="M237 327 Q283 345 344 325 M239 344 Q283 363 342 342 M231 365 Q281 390 353 367" stroke-width="1" opacity=".5"/>
+</g>
+<g fill="#e0c488"><path d="M73 119v15m-7-7h14 M481 170v15m-7-7h14 M455 358v16m-8-8h16 M132 360v16m-8-8h16 M292 28v17m-8-8h17" stroke="#ccb177" fill="none" stroke-width="2"/><circle cx="120" cy="215" r="2"/><circle cx="474" cy="269" r="2"/><circle cx="213" cy="60" r="2"/><circle cx="358" cy="66" r="2"/></g>
+<path d="M176 469 Q290 490 405 469 M205 485H375" fill="none" stroke="#bba276" opacity=".45"/>
+<text x="290" y="516" text-anchor="middle" fill="#d1b57c" font-family="Georgia" font-size="18" letter-spacing="11">✦  L U X O S  ✦</text>
+</svg>

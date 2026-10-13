@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" role="img" aria-label="Ilustração de fantasia cervo-aureo">
+<defs><radialGradient id="bg"><stop stop-color="#514937"/><stop offset=".65" stop-color="#302d27"/><stop offset="1" stop-color="#25231f"/></radialGradient><radialGradient id="halo"><stop stop-color="#bea06c" stop-opacity=".26"/><stop offset="1" stop-color="#d5ae73" stop-opacity="0"/></radialGradient></defs>
+<rect width="640" height="430" fill="url(#bg)"/><circle cx="320" cy="217" r="208" fill="url(#halo)"/>
+<circle cx="320" cy="225" r="188" fill="none" stroke="#b99e6b" stroke-width="1.5" opacity=".65"/><circle cx="320" cy="225" r="175" fill="none" stroke="#bba477" stroke-width=".7" opacity=".5"/>
+<path d="M320 20v28 M320 399v18 M119 225H91 M548 225h-27 M180 85l19 19 M440 85l-19 19 M179 363l20-20 M460 363l-19-20" stroke="#d1b27a" opacity=".6"/>
+<g fill="#e2c98b" opacity=".8"><circle cx="133" cy="88" r="2"/><circle cx="501" cy="110" r="2"/><circle cx="475" cy="334" r="2"/><circle cx="181" cy="327" r="2"/><path d="M112 156v11m-6-6h12 M514 292v11m-6-6h12 M410 49v11m-6-6h12" stroke="#e4c885"/></g>
+<g>
+<path d="M220 352 Q213 295 255 267 L288 232 L321 244 L350 271 Q388 284 402 353" fill="#493b2c" stroke="#d6b776" stroke-width="5"/>
+<path d="M289 243 Q276 204 285 168 L314 150 L340 175 Q344 208 329 248" fill="#54442f" stroke="#e0c88e" stroke-width="5"/>
+<path d="M285 181 L269 191 L287 198 M336 182 L353 190 L334 197" fill="none" stroke="#ceac68" stroke-width="7" stroke-linecap="round"/>
+<path d="M303 166 Q287 122 254 104 Q232 83 220 52 M266 121 Q257 85 278 52 M251 102 Q215 102 185 78 M323 166 Q342 117 377 95 Q398 75 412 41 M357 119 Q354 75 343 54 M377 95 Q416 103 438 78" fill="none" stroke="#e1bf77" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="300" cy="191" r="3" fill="#ebd6a2"/><circle cx="329" cy="191" r="3" fill="#ebd6a2"/>
+<path d="M302 224 L314 231 L327 224" fill="none" stroke="#c9a965" stroke-width="3"/></g>
+<path d="M18 55V18H55 M585 18h37v37 M18 377v35h37 M585 412h37v-35" stroke="#c9ad72" opacity=".48" stroke-width="2" fill="none"/>
+<path d="M251 410H389" stroke="#d4b779" stroke-width=".8" opacity=".4"/></svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" role="img" aria-label="Ilustração de fantasia mariposa-lunar">
+<defs><radialGradient id="bg"><stop stop-color="#514937"/><stop offset=".65" stop-color="#302d27"/><stop offset="1" stop-color="#25231f"/></radialGradient><radialGradient id="halo"><stop stop-color="#bea06c" stop-opacity=".26"/><stop offset="1" stop-color="#d5ae73" stop-opacity="0"/></radialGradient></defs>
+<rect width="640" height="430" fill="url(#bg)"/><circle cx="320" cy="217" r="208" fill="url(#halo)"/>
+<circle cx="320" cy="225" r="188" fill="none" stroke="#b99e6b" stroke-width="1.5" opacity=".65"/><circle cx="320" cy="225" r="175" fill="none" stroke="#bba477" stroke-width=".7" opacity=".5"/>
+<path d="M320 20v28 M320 399v18 M119 225H91 M548 225h-27 M180 85l19 19 M440 85l-19 19 M179 363l20-20 M460 363l-19-20" stroke="#d1b27a" opacity=".6"/>
+<g fill="#e2c98b" opacity=".8"><circle cx="133" cy="88" r="2"/><circle cx="501" cy="110" r="2"/><circle cx="475" cy="334" r="2"/><circle cx="181" cy="327" r="2"/><path d="M112 156v11m-6-6h12 M514 292v11m-6-6h12 M410 49v11m-6-6h12" stroke="#e4c885"/></g>
+<g>
+<path d="M319 194 Q253 89 175 120 Q126 172 208 260 Q236 286 300 274 M328 194 Q389 85 468 121 Q522 168 432 258 Q398 282 339 273" fill="#717769" stroke="#e6cc91" stroke-width="5"/>
+<path d="M298 275 Q218 256 197 306 Q182 367 265 358 L318 306 M339 274 Q427 259 443 307 Q454 364 372 358 L324 307" fill="#576b62" stroke="#dfc189" stroke-width="5"/>
+<ellipse cx="320" cy="245" rx="20" ry="109" fill="#4c4840" stroke="#e0c488" stroke-width="4"/>
+<path d="M311 162 Q284 116 267 108 M328 162 Q351 114 370 108" fill="none" stroke="#e2ca94" stroke-width="5" stroke-linecap="round"/>
+<circle cx="243" cy="194" r="26" fill="none" stroke="#d9bf89" stroke-width="5"/><circle cx="399" cy="194" r="26" fill="none" stroke="#d9bf89" stroke-width="5"/>
+<circle cx="245" cy="314" r="17" fill="none" stroke="#c8af80" stroke-width="4"/><circle cx="398" cy="314" r="17" fill="none" stroke="#c8af80" stroke-width="4"/>
+<path d="M290 238 Q224 163 187 167 M350 238 Q423 163 454 167" fill="none" stroke="#e0cb9a66" stroke-width="3"/></g>
+<path d="M18 55V18H55 M585 18h37v37 M18 377v35h37 M585 412h37v-35" stroke="#c9ad72" opacity=".48" stroke-width="2" fill="none"/>
+<path d="M251 410H389" stroke="#d4b779" stroke-width=".8" opacity=".4"/></svg>

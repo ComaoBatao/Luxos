@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" role="img" aria-label="Ilustração de fantasia lobo-cinzas">
+<defs><radialGradient id="bg"><stop stop-color="#514937"/><stop offset=".65" stop-color="#302d27"/><stop offset="1" stop-color="#25231f"/></radialGradient><radialGradient id="halo"><stop stop-color="#bea06c" stop-opacity=".26"/><stop offset="1" stop-color="#d5ae73" stop-opacity="0"/></radialGradient></defs>
+<rect width="640" height="430" fill="url(#bg)"/><circle cx="320" cy="217" r="208" fill="url(#halo)"/>
+<circle cx="320" cy="225" r="188" fill="none" stroke="#b99e6b" stroke-width="1.5" opacity=".65"/><circle cx="320" cy="225" r="175" fill="none" stroke="#bba477" stroke-width=".7" opacity=".5"/>
+<path d="M320 20v28 M320 399v18 M119 225H91 M548 225h-27 M180 85l19 19 M440 85l-19 19 M179 363l20-20 M460 363l-19-20" stroke="#d1b27a" opacity=".6"/>
+<g fill="#e2c98b" opacity=".8"><circle cx="133" cy="88" r="2"/><circle cx="501" cy="110" r="2"/><circle cx="475" cy="334" r="2"/><circle cx="181" cy="327" r="2"/><path d="M112 156v11m-6-6h12 M514 292v11m-6-6h12 M410 49v11m-6-6h12" stroke="#e4c885"/></g>
+<g>
+<path d="M219 318 Q199 287 235 251 L256 201 L267 96 L317 141 L365 100 L385 214 Q427 249 415 293 Q396 344 340 350 L278 350 Q238 343 219 318" fill="#535a58" stroke="#d5bd8b" stroke-width="5"/>
+<path d="M268 150 L291 191 L305 193 L316 162 L333 193 L359 186 L363 150" fill="#222c30" stroke="#af9b78" stroke-width="3"/>
+<path d="M256 244 Q288 228 319 250 Q349 225 388 240 L363 285 L346 294 L319 276 L292 293 L266 285 Z" fill="#777a6f" stroke="#cbb88b" stroke-width="3"/>
+<path d="M285 246 L304 250 M339 250 L355 245" stroke="#f7d18d" stroke-width="5" stroke-linecap="round"/>
+<path d="M301 295 L319 306 L337 295 M319 306 L319 318" stroke="#2e3030" stroke-width="4" fill="none"/>
+<path d="M239 322 L202 354 M268 338 L246 373 M370 336 L393 367 M406 317 L442 350" stroke="#c8ad79" stroke-width="7" stroke-linecap="round"/></g>
+<path d="M18 55V18H55 M585 18h37v37 M18 377v35h37 M585 412h37v-35" stroke="#c9ad72" opacity=".48" stroke-width="2" fill="none"/>
+<path d="M251 410H389" stroke="#d4b779" stroke-width=".8" opacity=".4"/></svg>

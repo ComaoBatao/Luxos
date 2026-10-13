@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#211e19" />
+  <meta name="description" content="Luxos — um bestiário interativo das criaturas do universo Horxs. Pesquisa, descobre e compara os animais dos reinos." />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="module" src="./app.js"></script>
+  <title>Luxos — O Bestiário de Horxs</title>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Luxos — início">
+        <img src="./assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-text"><strong>LUXOS</strong><small>O BESTIÁRIO DE HORXS</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#bestiario" class="nav-link active">Bestiário</a>
+        <a href="#comparador" class="nav-link">Comparador</a>
+        <a href="#sobre" class="nav-link">Sobre o arquivo</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="icon-button" id="admin-btn" title="Área do guardião" aria-label="Área do guardião">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3z"/><circle cx="12" cy="11" r="2"/><path d="M12 13v3"/></svg>
+        </button>
+        <button type="button" class="btn btn-accent admin-only hidden" id="add-animal-btn"><span aria-hidden="true">✦</span> Nova criatura</button>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-ornament hero-ornament-top" aria-hidden="true">✧ ─────── ❦ ─────── ✧</div>
+        <div class="hero-content">
+          <div class="eyebrow hero-eyebrow"><span class="diamond"></span> OS REGISTOS PERDIDOS DE HORXS <span class="diamond"></span></div>
+          <h1 id="hero-title">Há mundos que<br/>vivem nas <em>lendas.</em></h1>
+          <p>Das florestas esquecidas aos céus mais distantes, descobre as criaturas que habitam os reinos de Luxos.</p>
+          <a href="#bestiario" class="btn btn-hero">Abrir o bestiário <span aria-hidden="true">↗</span></a>
+          <div class="hero-note"><span class="hero-note-rule"></span> ARQUIVO NATURAL · VOL. I <span class="hero-note-rule"></span></div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Ilustração dourada de um cervo místico sob a lua">
+          <img src="./assets/hero-engraving.svg" alt="" />
+        </div>
+        <div class="hero-ornament hero-ornament-bottom" aria-hidden="true">✧ ─────── ❦ ─────── ✧</div>
+      </section>
+
+      <section class="archive-status" aria-label="Estatísticas do bestiário">
+        <div class="archive-stat"><span id="stat-animals" class="stat-number">—</span><span class="stat-label">CRIATURAS REGISTADAS</span></div>
+        <span class="stat-separator" aria-hidden="true">✦</span>
+        <div class="archive-stat"><span id="stat-kingdoms" class="stat-number">—</span><span class="stat-label">REINOS EXPLORADOS</span></div>
+        <span class="stat-separator" aria-hidden="true">✦</span>
+        <div class="archive-stat"><span id="stat-diets" class="stat-number">—</span><span class="stat-label">TIPOS DE ALIMENTAÇÃO</span></div>
+      </section>
+
+      <section id="bestiario" class="content-section section-catalogue" aria-labelledby="catalogue-title">
+        <div class="section-heading"><span class="section-kicker">CAPÍTULO PRIMEIRO <span>✧</span> A VIDA DE LUXOS</span><h2 id="catalogue-title">O Grande <em>Bestiário</em></h2><p>Folheia os registos. Cada criatura guarda uma história à espera de ser descoberta.</p></div>
+        <div id="demo-banner" class="notice demo-notice hidden" role="status"><span aria-hidden="true">✧</span><div><strong>Modo demonstração</strong><span>As criaturas abaixo são exemplos ilustrativos, não são oficiais do universo Horxs. Liga o Firebase para publicares as tuas próprias criaturas.</span></div></div>
+        <div id="app-notice" class="notice error-notice hidden" role="alert"></div>
+        <div class="catalogue-tools">
+          <label class="search-wrap"><span class="sr-only">Pesquisar criaturas</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input id="search-input" type="search" placeholder="Procurar criaturas, alimento, habitat…" autocomplete="off" /></label>
+          <label class="select-wrap"><span class="sr-only">Filtrar por reino</span><select id="kingdom-filter"><option value="">Todos os reinos</option></select><span class="select-chevron">⌄</span></label>
+          <label class="select-wrap"><span class="sr-only">Ordenar resultados</span><select id="sort-filter"><option value="name">Ordem alfabética</option><option value="height-desc">Maior altura</option><option value="height-asc">Menor altura</option><option value="weight-desc">Maior peso</option><option value="newest">Mais recentes</option></select><span class="select-chevron">⌄</span></label>
+        </div>
+        <div class="diet-filters" role="group" aria-label="Filtrar por alimentação"><button type="button" class="filter-pill selected" data-diet="">Todas as criaturas</button><button type="button" class="filter-pill" data-diet="Herbívoro">Herbívoros</button><button type="button" class="filter-pill" data-diet="Carnívoro">Carnívoros</button><button type="button" class="filter-pill" data-diet="Omnívoro">Omnívoros</button></div>
+        <div class="list-meta"><span id="result-count">A preparar os registos…</span><span aria-hidden="true" class="meta-ornament">❧ ───── ❧</span></div>
+        <div id="animal-grid" class="animal-grid" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state hidden"><div class="empty-symbol">✧</div><h3>Nenhuma criatura encontrada</h3><p>Tenta outra pesquisa ou altera os filtros para explorar outros registos.</p><button type="button" class="btn btn-secondary" id="clear-filters">Limpar filtros</button></div>
+      </section>
+
+      <section id="comparador" class="comparison-section" aria-labelledby="compare-title">
+        <div class="section-heading"><span class="section-kicker">CAPÍTULO SEGUNDO <span>✧</span> ESCALAS & MEDIDAS</span><h2 id="compare-title">Gigantes ou <em>minúsculos?</em></h2><p>Escolhe duas criaturas e compara as suas alturas à mesma escala, com uma pessoa de 1,70 m como referência.</p></div>
+        <div class="compare-panel">
+          <div class="compare-controls"><label>PRIMEIRA CRIATURA<select id="compare-a"></select></label><div class="compare-vs">VS</div><label>SEGUNDA CRIATURA<select id="compare-b"></select></label></div>
+          <div id="compare-visual" class="compare-visual" aria-label="Comparação visual das alturas"></div>
+          <div id="compare-facts" class="compare-facts"></div>
+          <p class="compare-disclaimer">As barras representam a altura registada, não o comprimento nem a silhueta exata dos animais.</p>
+        </div>
+      </section>
+
+      <section id="sobre" class="about-section" aria-labelledby="about-title"><div class="about-sigil" aria-hidden="true">❦</div><div><span class="section-kicker">UMA ENCICLOPÉDIA VIVA</span><h2 id="about-title">As páginas nunca se <em>fecham.</em></h2><p>Luxos é o arquivo de criaturas do RPG <strong>Horxs</strong>. À medida que novas espécies são descobertas pelo guardião, os seus registos passam a integrar este livro e ficam disponíveis para todos os viajantes.</p></div><span class="about-ornament" aria-hidden="true">✦</span></section>
+    </main>
+    <footer class="footer"><div class="footer-brand"><span>❦</span> LUXOS <small>· O BESTIÁRIO DE HORXS</small></div><p>Feito para os viajantes de Horxs · <span id="footer-year"></span></p><a href="#inicio">Voltar ao início ↑</a></footer>
+  </div>
+
+  <dialog id="animal-dialog" class="app-dialog detail-dialog" aria-label="Ficha da criatura"><div class="dialog-topbar"><span>✦ REGISTO DO BESTIÁRIO</span><button class="dialog-close" type="button" data-close="animal-dialog" aria-label="Fechar">×</button></div><div id="animal-detail"></div></dialog>
+
+  <dialog id="login-dialog" class="app-dialog small-dialog" aria-labelledby="login-title"><div class="dialog-topbar"><span>✦ ÁREA RESERVADA</span><button class="dialog-close" type="button" data-close="login-dialog" aria-label="Fechar">×</button></div><div class="dialog-padding"><div class="dialog-sigil">♜</div><h2 id="login-title">Acesso do <em>Guardião</em></h2><p class="dialog-intro">Apenas o responsável pelo arquivo pode adicionar ou alterar criaturas.</p><form id="login-form"><label class="field">E-mail <input type="email" id="login-email" autocomplete="username" required placeholder="o-teu-email@exemplo.com"></label><label class="field">Palavra-passe <input type="password" id="login-password" autocomplete="current-password" required placeholder="••••••••"></label><p id="login-error" class="form-error hidden" role="alert"></p><button class="btn btn-primary full" type="submit" id="login-submit">Entrar no arquivo</button></form><button type="button" class="text-button hidden" id="logout-btn">Terminar sessão</button></div></dialog>
+
+  <dialog id="editor-dialog" class="app-dialog editor-dialog" aria-labelledby="editor-title"><div class="dialog-topbar"><span>✦ O LIVRO DO GUARDIÃO</span><button class="dialog-close" type="button" data-close="editor-dialog" aria-label="Fechar">×</button></div><div class="dialog-padding"><h2 id="editor-title">Nova <em>criatura</em></h2><p class="dialog-intro">Preenche o registo. Os campos assinalados com * são obrigatórios.</p><form id="animal-form">
+    <div class="form-columns">
+      <label class="field">Nome da criatura *<input name="name" required maxlength="80" placeholder="Ex.: Cervo Áureo"></label>
+      <label class="field">Espécie / classificação<input name="species" maxlength="100" placeholder="Ex.: Cervídeo místico"></label>
+      <label class="field">Reino *<input name="kingdom" required maxlength="70" list="kingdom-list" placeholder="Ex.: Oleander"><datalist id="kingdom-list"><option value="Oleander"><option value="Taigara"><option value="Dauphim"><option value="Nox-Anibus"><option value="Cygne"><option value="Fakoliria"><option value="Frostheim"></datalist></label>
+      <label class="field">Habitat *<input name="habitat" required maxlength="100" placeholder="Ex.: Florestas antigas"></label>
+      <label class="field">Alimentação *<select name="diet" required><option value="Herbívoro">Herbívoro</option><option value="Carnívoro">Carnívoro</option><option value="Omnívoro">Omnívoro</option></select></label>
+      <label class="field">Raridade<select name="rarity"><option>Comum</option><option>Incomum</option><option>Raro</option><option>Lendário</option></select></label>
+      <label class="field">Temperamento<input name="temperament" maxlength="80" placeholder="Ex.: Pacífico e tímido"></label>
+      <label class="field">Símbolo (emoji)<input name="symbol" maxlength="4" placeholder="✦"></label>
+      <label class="field">Altura em metros *<input name="height" type="number" min="0.01" max="1000" step="any" required placeholder="Ex.: 2.4"></label>
+      <label class="field">Comprimento em metros<input name="length" type="number" min="0" max="10000" step="any" placeholder="Ex.: 3.2"></label>
+      <label class="field">Peso em quilogramas<input name="weight" type="number" min="0" max="1000000" step="any" placeholder="Ex.: 450"></label>
+      <label class="field">Estado de conservação<select name="conservation"><option>Desconhecido</option><option>Estável</option><option>Vulnerável</option><option>Em perigo</option><option>Extinto</option></select></label>
+    </div>
+    <label class="field">O que come? *<textarea name="food" rows="2" maxlength="700" required placeholder="Ex.: Folhas douradas, pequenos frutos e fungos..."></textarea></label>
+    <label class="field">Descrição *<textarea name="description" rows="4" maxlength="2400" required placeholder="Conta a história da espécie, o seu aspeto e as suas particularidades..."></textarea></label>
+    <label class="field">Comportamento<textarea name="behavior" rows="3" maxlength="1300" placeholder="Como vive? É territorial? Vive em grupo?"></textarea></label>
+    <label class="field">Curiosidades<textarea name="curiosity" rows="2" maxlength="900" placeholder="Um facto curioso ou uma lenda sobre a criatura..."></textarea></label>
+    <label class="field">Imagens por URL (uma por linha)<textarea name="imageUrls" rows="3" placeholder="https://.../imagem1.jpg&#10;./assets/uma-imagem.png"></textarea><small>Podes usar imagens alojadas noutro sítio. Confirma que tens permissão para as utilizar e que os links são públicos.</small></label>
+    <label class="field">Ou enviar imagens para Firebase Storage<input id="image-files" name="imageFiles" type="file" accept="image/png,image/jpeg,image/webp,image/gif" multiple><small>Até 5 MB por imagem. Opcional; exige Firebase Storage ativo (plano Blaze).</small></label>
+    <p id="editor-error" class="form-error hidden" role="alert"></p><div class="editor-actions"><button type="button" class="btn btn-secondary" id="editor-cancel">Cancelar</button><button type="submit" id="editor-save" class="btn btn-primary">✦ Publicar criatura</button></div>
+  </form></div></dialog>
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+</body>
+</html>
